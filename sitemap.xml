@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.resinjo.de/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.resinjo.de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.resinjo.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.resinjo.com/"/>
+  </url>
+  <url>
+    <loc>https://www.resinjo.de/impressum.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.resinjo.de/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.resinjo.com/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.resinjo.com/impressum.html"/>
+  </url>
+</urlset>
