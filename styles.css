@@ -67,9 +67,32 @@ h1, h2, h3 { line-height: 1.25; }
   justify-content: space-between;
   min-height: 64px;
 }
-.logo { display: flex; align-items: center; gap: var(--space-1); color: var(--color-text-on-dark); font-weight: 700; }
-.logo:hover, .logo:focus-visible { color: var(--color-accent); }
-.logo svg { height: 28px; width: auto; }
+.logo {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 8px;
+  padding: 4px 6px;
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--color-graphite);
+}
+.logo-mark, .logo-wordmark { display: block; flex: none; background-image: url("assets/resinjo-logo.png"); background-repeat: no-repeat; }
+.logo-mark { width: 52px; height: 45px; background-size: 100px 100px; background-position: -26px -16px; }
+.logo-type { display: flex; flex-direction: column; align-items: center; line-height: 1; }
+.logo-wordmark { width: 174px; height: 27px; background-size: 184px 184px; background-position: -6px -116px; }
+.logo-tagline { max-width: 174px; margin-top: 2px; font-size: 7px; font-weight: 700; letter-spacing: 0.15em; text-align: center; white-space: nowrap; }
+
+@media (max-width: 440px) {
+  .logo { gap: 5px; padding: 4px 5px; }
+  .logo-mark { width: 34px; height: 31px; background-size: 66px 66px; background-position: -17px -10px; }
+  .logo-wordmark { width: 118px; height: 19px; background-size: 125px 125px; background-position: -4px -79px; }
+  .logo-tagline { max-width: 118px; font-size: 6px; line-height: 1.1; letter-spacing: 0; white-space: normal; }
+}
+@media (max-width: 360px) {
+  .site-header .container { padding-inline: 12px; }
+  .site-header .header-right { gap: 8px; }
+}
 
 .header-right { display: flex; align-items: center; gap: var(--space-3); }
 
