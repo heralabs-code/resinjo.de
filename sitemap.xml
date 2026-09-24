@@ -13,4 +13,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.resinjo.com/impressum.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.resinjo.com/impressum.html"/>
   </url>
+  <url>
+    <loc>https://www.resinjo.de/datenschutz.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.resinjo.de/datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.resinjo.com/datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.resinjo.com/datenschutz.html"/>
+  </url>
 </urlset>

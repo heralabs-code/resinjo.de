@@ -100,7 +100,7 @@ h1, h2, h3 { line-height: 1.25; }
 }
 .nav-toggle svg { width: 20px; height: 20px; }
 
-@media (min-width: 800px) {
+@media (min-width: 960px) {
   .main-nav { display: block; position: static; background: none; padding: 0; }
   .main-nav ul { flex-direction: row; gap: var(--space-3); }
   .nav-toggle { display: none; }
@@ -170,6 +170,18 @@ h1, h2, h3 { line-height: 1.25; }
 .quality .section-title { border-left-color: var(--color-accent); color: var(--color-text-on-dark); }
 .quality p { color: #e3ebf1; max-width: 70ch; }
 .quality strong { color: var(--color-accent-tint); }
+
+/* Dealers and FAQ */
+.dealer-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-3); }
+@media (min-width: 700px) { .dealer-grid { grid-template-columns: repeat(3, 1fr); } }
+.dealer-card { display: flex; flex-direction: column; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius); padding: var(--space-3); }
+.dealer-card h3 { margin: 0 0 var(--space-1); }
+.dealer-card p { margin: 0 0 var(--space-3); color: var(--color-text-muted); }
+.dealer-card a { margin-top: auto; font-weight: 700; text-decoration: underline; text-underline-offset: 0.2em; }
+.faq-list { max-width: 80ch; display: grid; gap: var(--space-2); }
+.faq-list details { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: var(--space-2) var(--space-3); }
+.faq-list summary { cursor: pointer; font-weight: 700; }
+.faq-list details p { margin-bottom: 0; color: var(--color-text-muted); }
 
 /* Contact */
 .contact-grid { display: grid; gap: var(--space-3); }

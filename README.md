@@ -11,16 +11,19 @@ Reines HTML/CSS/vanilla JS, kein Build-Schritt, kein Framework. `index.html` dir
 
 - `index.html` – die Onepager-Seite
 - `impressum.html` – Impressum
+- `datenschutz.html` – Datenschutzhinweise
 - `styles.css`, `script.js` – gemeinsames Styling/Verhalten (Mobil-Navigation)
 - `assets/` – Platzhalter-Favicon; `logo-placeholder.svg` ist nur eine Referenzkopie (wird von keiner Seite eingebunden)
 - `sitemap.xml`, `robots.txt`, `CNAME` – Hosting-/SEO-Konfiguration für GitHub Pages
 
 ## Bekannte Platzhalter
 
-Suche nach `PLATZHALTER` in `index.html` und `impressum.html` — Kontaktdaten und Impressum-Pflichtangaben müssen noch ergänzt werden. Das findet auch die `PLATZHALTER: ...`-Kommentare (Kommentar mit dem Hinweis auf das einzusetzende Logo), die markieren, wo das echte Logo eingesetzt werden muss – es ist direkt im HTML eingebunden, an 2 Stellen pro Datei, keine austauschbare Asset-Datei.
+Suche nach `PLATZHALTER` in `index.html` und `impressum.html` — die Kommentare markieren das noch einzusetzende endgültige Logo.
 
-**Vor dem Live-Gang:** außerdem den kursiven Hinweis am Anfang von `impressum.html` entfernen ("Diese Seite ist ein Entwurf und keine Rechtsberatung..."). Das ist normaler Fließtext, kein `PLATZHALTER`-Marker, wird von der Suche oben also nicht gefunden.
+**Vor dem Live-Gang:** Datenschutzhinweise anhand des tatsächlichen Betriebs prüfen: Bei STRATO gilt die AVV laut Anbieter für Verträge ab 18.07.2022 automatisch; ältere Verträge müssen im Kundenkonto geprüft werden. Klären, welche Datenschutzvereinbarung GitHub Pages tatsächlich abdeckt, Drittlandübermittlungen bewerten und die interne Aufbewahrung von Anfragen festlegen. Laut Betreiber gibt es derzeit keinen bestellten Datenschutzbeauftragten. Die Händlerlinks führen auf eigenständige Shops.
 
 ## Änderungen veröffentlichen
 
-Diese Seite hat keinen Build-Schritt – GitHub Pages liefert die Dateien in diesem Repo genau so aus, wie sie committet sind. Um eine Änderung zu veröffentlichen: Datei bearbeiten (direkt auf github.com oder wie auch immer gewünscht), auf den Branch `main` committen – nach etwa einer Minute ist die Änderung live unter www.resinjo.de. Die Datei `CNAME` nicht löschen oder umbenennen – die sagt GitHub, unter welcher Domain diese Seite läuft.
+Diese Seite hat keinen Build-Schritt. Für die Veröffentlichung auf GitHub Pages müssen der Pages-Dienst aktiviert und die DNS-Einträge der Domain auf GitHub Pages gerichtet sein. Die Datei `CNAME` benennt nur die gewünschte Domain und konfiguriert DNS nicht selbst.
+
+**Prüfstand 24.09.2026:** `www.resinjo.de` zeigt per DNS auf STRATO und leitet über HTTP zu `heratec.de` weiter; HTTPS auf `www.resinjo.de` schlägt fehl. `https://heralabs-code.github.io/resinjo.de/` liefert 404. Die Dateien dieses Repos sind daher unter der ReSinJo-Domain derzeit nicht veröffentlicht. Ein Commit auf `main` allein ändert das nicht.
